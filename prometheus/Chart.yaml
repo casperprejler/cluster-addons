@@ -1,4 +1,4 @@
-apiVersion: v2
+apiVersion: v3
 name: helm-prometheus-operator
 
 type: application
