@@ -1,2 +1,3 @@
-server:
-  serviceType: LoadBalancer
+workflow:
+  server:
+    serviceType: LoadBalancer
