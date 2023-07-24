@@ -17,15 +17,14 @@ kind: VCluster
 metadata:
   name: {{.Values.cluster_name}}
 spec:
-  
-    values: |
-      serviceCIDR: "{{.Values.serviceCIDR}}"
-      service:
-        type: {{.Values.service.type }}
+  values: |
+    serviceCIDR: "{{.Values.serviceCIDR}}"
+    service:
+      type: {{.Values.service.type }}
       
         
-      securityContext:
-        runAsUser: 12345
-        runAsNonRoot: true
-      fsGroup: 12345
+    securityContext:
+      runAsUser: 12345
+      runAsNonRoot: true
+    fsGroup: 12345
   kubernetesVersion: "{{.Values.kubernetes_version}}"
