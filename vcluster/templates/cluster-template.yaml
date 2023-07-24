@@ -20,9 +20,9 @@ spec:
   
   helmRelease:
     chart:
-      name: "{{.Values.chart_name}}"
-      repo: "{{.Values.chart_repo}}"
-      version: "{{.Values.chart_version}}"
+      name: {{.Values.chart_name}}
+      repo: {{.Values.chart_repo}}
+      version: {{.Values.chart_version}}s
     values: |
       serviceCIDR: "{{.Values.serviceCIDR}}"
       service:
